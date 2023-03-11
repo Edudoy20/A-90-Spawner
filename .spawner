@@ -10,7 +10,7 @@ Achievements.Get({
 })
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("OverBot A-90 Spawner Mobile Version","Serpent")
+local Window = Library.CreateLib("OverBot A-90 Spawner","Serpent")
 local Tab = Window:NewTab("Spawn A-90")
 
 local Section = Tab:NewSection("A-90")
@@ -82,9 +82,9 @@ end)
 
 
 
-local Tab = Window:NewTab("Crucifix")
+local Tab = Window:NewTab("Items")
 
-local Section = Tab:NewSection("yay")
+local Section = Tab:NewSection("Hotel + Update Items")
 
 Section:NewButton("Crucifix", "yay", function()
        
@@ -502,6 +502,26 @@ Tool_obj.Parent = Player.Backpack
 
 
 end)
+
+Section:NewButton("Scanner", "its the same as A-1000", function()
+    _G.UpdateStars = true -- stars disappear after picking up a book/breaker pole | false: a little lag
+_G.OnShop = true -- can buy on pre run shop
+_G.Price = 1000 -- tablet price on shop
+_G.Description = "" -- tablet description on shop
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/DeividComSono/Scripts/main/Scanner.lua'))()
+end)
+
+
+
+
+
+
+
+
+
+
+
 
 local Tab = Window:NewTab("Crucifix Entities")
 

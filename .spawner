@@ -513,6 +513,10 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/DeividComSono/Scripts
 end)
 
 
+Section:NewButton("Shears", "does nothing :(", function()
+ local Item = game:GetObjects("rbxassetid://12328283748")[1]
+Item.Parent = game.Players.LocalPlayer.Backpack
+end)
 
 
 

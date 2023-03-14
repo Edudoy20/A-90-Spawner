@@ -997,7 +997,7 @@ local entityTable = Spawner.createEntity({
         WaitTime = 2,
     },
     CamShake = {
-        true, -- Enabled/Disabled
+        false, -- Enabled/Disabled
         {3.5, 20, 0.1, 1}, -- Shake values (don't change if you don't know)
         100, -- Shake start distance (from Entity to you)
     },
@@ -1086,7 +1086,7 @@ local entityTable = Spawner.createEntity({
     },
     Cycles = {
         Min = 1,
-        Max = 8,
+        Max = 4,
         WaitTime = 2,
     },
     CamShake = {
@@ -1265,7 +1265,7 @@ local entity = Creator.createEntity({
     BreakLights = true,
     BackwardsMovement = false,
     FlickerLights = {
-        true, -- Enabled/Disabled
+        false, -- Enabled/Disabled
         10, -- Time (seconds)
     },
     Cycles = {
@@ -1274,7 +1274,7 @@ local entity = Creator.createEntity({
         WaitTime = 1,
     },
     CamShake = {
-        true, -- Enabled/Disabled
+        false, -- Enabled/Disabled
         {3.5, 20, 0.1, 1}, -- Shake values (don't change if you don't know)
         100, -- Shake start distance (from Entity to you)
     },
@@ -1627,7 +1627,7 @@ local entityTable = Spawner.createEntity({
     BackwardsMovement = false,
     BreakLights = true,
     FlickerLights = {
-        true, -- Enabled/Disabled
+        false, -- Enabled/Disabled
         1, -- Time (seconds)
     },
     Cycles = {
@@ -1636,7 +1636,7 @@ local entityTable = Spawner.createEntity({
         WaitTime = 2,
     },
     CamShake = {
-        true, -- Enabled/Disabled
+        false, -- Enabled/Disabled
         {3.5, 20, 0.1, 1}, -- Shake values (don't change if you don't know)
         100, -- Shake start distance (from Entity to you)
     },
@@ -1724,8 +1724,8 @@ local entityTable = Spawner.createEntity({
         1, -- Time (seconds)
     },
     Cycles = {
-        Min = 5,
-        Max = 10,
+        Min = 2,
+        Max = 2,
         WaitTime = 2,
     },
     CamShake = {

@@ -774,7 +774,11 @@ Section:NewButton("Old Crucifix", "Old", function()
      loadstring(game:HttpGet('https://raw.githubusercontent.com/ZepsyyCodesLUA/Utilities/main/Doors/Crucifix.lua'))()
 end)
 
-
+Section:NewButton("Inf Crucifix", "inf", function()
+   _G.Uses = 99999999
+_G.Range = 30
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
+end)
 
 
 

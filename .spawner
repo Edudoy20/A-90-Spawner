@@ -780,7 +780,7 @@ _G.Range = 30
 loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
 end)
 
-Section:NewButton("Inf Crucifix", "inf", function()
+Section:NewButton("A-60 Crucifix", "bruh", function()
 local function IsVisible(part)
     local vec, found=workspace.CurrentCamera:WorldToViewportPoint(part.Position)
     local onscreen = found and vec.Z > 0

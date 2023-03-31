@@ -4,16 +4,16 @@ local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 -- Creates and displays your custom achievement
 Achievements.Get({
     Title = "EXECUTED!",
-    Desc = "Thanks for using the A-90 Spawner",
-    Reason = 'Execute the A-90 spawner',
-    Image = "Your Image Link With Https://",
+    Desc = "Thanks for buying the OverBot Hub",
+    Reason = 'Execute the OverBot Hub',
+    Image = "",
 })
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("OverBot A-90 Spawner","Serpent")
-local Tab = Window:NewTab("Spawn A-90")
+local Window = Library.CreateLib("OverBot Hub Beta","Ocean")
+local Tab = Window:NewTab("A-90 Spawner")
 
-local Section = Tab:NewSection("A-90")
+local Section = Tab:NewSection("A-90 Spawner")
 Section:NewLabel("Made by OverBot FNF")
 
 Section:NewButton("A-90", "spawn A-90",function()
@@ -511,7 +511,6 @@ _G.Description = "" -- tablet description on shop
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/DeividComSono/Scripts/main/Scanner.lua'))()
 end)
-
 
 Section:NewButton("Shears", "does nothing :(", function()
  local Item = game:GetObjects("rbxassetid://12328283748")[1]
@@ -1230,6 +1229,8 @@ end)
 
 
 
+
+
 local Tab = Window:NewTab("Crucifix Entities")
 
 local Section = Tab:NewSection("Crucifix'em all!!!")
@@ -1294,11 +1295,42 @@ local entityTable = Spawner.createEntity({
 
 -----[[  Debug -=- Advanced  ]]-----
 entityTable.Debug.OnEntitySpawned = function()
-    print("Entity has spawned:", entityTable)
+-- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Smiler is Coming",
+    Desc = "Hide",
+    Reason = '',
+    Image = "Your Image Link With Https://",
+})
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=861951059"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
+
+
 end
 
 entityTable.Debug.OnEntityDespawned = function()
-    print("Entity has despawned:", entityTable)
+    -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Smile!",
+    Desc = "Smiling to Forget",
+    Reason = 'Survive Smiler',
+    Image = "Your Image Link With Https://",
+})
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=336790778"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
+
 end
 
 entityTable.Debug.OnEntityStartMoving = function()
@@ -1386,11 +1418,42 @@ local entityTable = Spawner.createEntity({
 
 -----[[  Debug -=- Advanced  ]]-----
 entityTable.Debug.OnEntitySpawned = function()
-    print("Entity has spawned:", entityTable)
+   -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Happy is Coming",
+    Desc = "Hide",
+    Reason = '',
+    Image = "Your Image Link With Https://",
+})
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=861951059"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
+
+
 end
 
 entityTable.Debug.OnEntityDespawned = function()
-    print("Entity has despawned:", entityTable)
+    -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Happy",
+    Desc = "he like happiness",
+    Reason = 'Survive Happy',
+    Image = "Your Image Link With Https://",
+})
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=336790778"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
+
 end
 
 entityTable.Debug.OnEntityStartMoving = function()
@@ -1479,12 +1542,40 @@ local entityTable = Spawner.createEntity({
 
 -----[[  Debug -=- Advanced  ]]-----
 entityTable.Debug.OnEntitySpawned = function()
-    print("Entity has spawned:", entityTable)
+      -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Deer God is Coming",
+    Desc = "Hide and Dont make a noise...",
+    Reason = '',
+    Image = "Your Image Link With Https://",
+})
 end
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=861951059"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
 
 entityTable.Debug.OnEntityDespawned = function()
-    print("Entity has despawned:", entityTable)
+      -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Shh...",
+    Desc = "you did it...",
+    Reason = 'Survive the Deer God',
+    Image = "Your Image Link With Https://",
+})
 end
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=336790778"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
 
 entityTable.Debug.OnEntityStartMoving = function()
     print("Entity has started moving:", entityTable)
@@ -1533,7 +1624,7 @@ local entityTable = Spawner.createEntity({
     },
     Cycles = {
         Min = 1,
-        Max = 4,
+        Max = 8,
         WaitTime = 2,
     },
     CamShake = {
@@ -1572,12 +1663,41 @@ local entityTable = Spawner.createEntity({
 
 -----[[  Debug -=- Advanced  ]]-----
 entityTable.Debug.OnEntitySpawned = function()
-    print("Entity has spawned:", entityTable)
+      -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Nightmare Rush is Coming",
+    Desc = "Hide...",
+    Reason = '',
+    Image = "Your Image Link With Https://",
+})
 end
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=861951059"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
 
 entityTable.Debug.OnEntityDespawned = function()
-    print("Entity has despawned:", entityTable)
+       -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Rush...?",
+    Desc = "are you okay?",
+    Reason = 'Survive Nightmare Rush',
+    Image = "Your Image Link With Https://",
+})
 end
+
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=336790778"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
 
 entityTable.Debug.OnEntityStartMoving = function()
     print("Entity has started moving:", entityTable)
@@ -1665,11 +1785,40 @@ local entityTable = Spawner.createEntity({
 
 -----[[  Debug -=- Advanced  ]]-----
 entityTable.Debug.OnEntitySpawned = function()
-    print("Entity has spawned:", entityTable)
+      -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Matcher is Coming",
+    Desc = "Hide Quickly",
+    Reason = '',
+    Image = "Your Image Link With Https://",
+})
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=861951059"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
 end
 
 entityTable.Debug.OnEntityDespawned = function()
-    print("Entity has despawned:", entityTable)
+       -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Red Terror",
+    Desc = "holy sh",
+    Reason = 'Survive Matcher',
+    Image = "Your Image Link With Https://",
+})
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=336790778"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
+
 end
 
 entityTable.Debug.OnEntityStartMoving = function()
@@ -1712,7 +1861,7 @@ local entity = Creator.createEntity({
     BreakLights = true,
     BackwardsMovement = false,
     FlickerLights = {
-        false, -- Enabled/Disabled
+        true, -- Enabled/Disabled
         10, -- Time (seconds)
     },
     Cycles = {
@@ -1721,7 +1870,7 @@ local entity = Creator.createEntity({
         WaitTime = 1,
     },
     CamShake = {
-        false, -- Enabled/Disabled
+        true, -- Enabled/Disabled
         {3.5, 20, 0.1, 1}, -- Shake values (don't change if you don't know)
         100, -- Shake start distance (from Entity to you)
     },
@@ -1755,12 +1904,42 @@ local entity = Creator.createEntity({
 
 -----[[ Advanced ]]-----
 entity.Debug.OnEntitySpawned = function(entityTable)
-    print("Entity has spawned:", entityTable.Model)
+      -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "A-60 is Coming",
+    Desc = "Good Luck",
+    Reason = '',
+    Image = "Your Image Link With Https://",
+})
 end
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=861951059"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
 
 entity.Debug.OnEntityDespawned = function(entityTable)
-    print("Entity has despawned:", entityTable.Model)
+       -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Bad Crossover",
+    Desc = "uh...",
+    Reason = 'Survive A-60',
+    Image = "Your Image Link With Https://",
+})
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=336790778"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
+
 end
+
 
 entity.Debug.OnEntityStartMoving = function(entityTable)
     print("Entity has started moving:", entityTable.Model)
@@ -1847,12 +2026,40 @@ local entityTable = Spawner.createEntity({
 
 -----[[  Debug -=- Advanced  ]]-----
 entityTable.Debug.OnEntitySpawned = function()
-    print("Entity has spawned:", entityTable)
+     -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Rebound is Coming",
+    Desc = "Hide...i guess",
+    Reason = '',
+    Image = "Your Image Link With Https://",
+})
 end
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=861951059"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
 
 entityTable.Debug.OnEntityDespawned = function()
-    print("Entity has despawned:", entityTable)
+       -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Rebound Time",
+    Desc = "interesting",
+    Reason = 'Survive Rebound',
+    Image = "Your Image Link With Https://",
+})
 end
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=336790778"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
 
 entityTable.Debug.OnEntityStartMoving = function()
     print("Entity has started moving:", entityTable)
@@ -1937,12 +2144,40 @@ local entity = Creator.createEntity({
 
 -----[[ Advanced ]]-----
 entity.Debug.OnEntitySpawned = function(entityTable)
-    print("Entity has spawned:", entityTable.Model)
+      -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Dread is Coming",
+    Desc = "Wait What?",
+    Reason = '',
+    Image = "Your Image Link With Https://",
+})
 end
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=861951059"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
 
 entity.Debug.OnEntityDespawned = function(entityTable)
-    print("Entity has despawned:", entityTable.Model)
+     -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Dread Left the game",
+    Desc = "Who is it?",
+    Reason = 'Survive Dread',
+    Image = "Your Image Link With Https://",
+})
 end
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=336790778"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
 
 entity.Debug.OnEntityStartMoving = function(entityTable)
     print("Entity has started moving:", entityTable.Model)
@@ -2026,12 +2261,40 @@ local entity = Creator.createEntity({
 
 -----[[ Advanced ]]-----
 entity.Debug.OnEntitySpawned = function(entityTable)
-    print("Entity has spawned:", entityTable.Model)
+     -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Ripper is Coming",
+    Desc = "uh oh",
+    Reason = '',
+    Image = "Your Image Link With Https://",
+})
 end
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=861951059"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
 
 entity.Debug.OnEntityDespawned = function(entityTable)
-    print("Entity has despawned:", entityTable.Model)
+      -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Ripper give up",
+    Desc = "bruh",
+    Reason = 'Survive Ripper',
+    Image = "Your Image Link With Https://",
+})
 end
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=336790778"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
 
 entity.Debug.OnEntityStartMoving = function(entityTable)
     print("Entity has started moving:", entityTable.Model)
@@ -2074,7 +2337,7 @@ local entityTable = Spawner.createEntity({
     BackwardsMovement = false,
     BreakLights = true,
     FlickerLights = {
-        false, -- Enabled/Disabled
+        true, -- Enabled/Disabled
         1, -- Time (seconds)
     },
     Cycles = {
@@ -2083,7 +2346,7 @@ local entityTable = Spawner.createEntity({
         WaitTime = 2,
     },
     CamShake = {
-        false, -- Enabled/Disabled
+        true, -- Enabled/Disabled
         {3.5, 20, 0.1, 1}, -- Shake values (don't change if you don't know)
         100, -- Shake start distance (from Entity to you)
     },
@@ -2118,12 +2381,40 @@ local entityTable = Spawner.createEntity({
 
 -----[[  Debug -=- Advanced  ]]-----
 entityTable.Debug.OnEntitySpawned = function()
-    print("Entity has spawned:", entityTable)
+      -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "A-200 is Coming",
+    Desc = "did you hear it?",
+    Reason = '',
+    Image = "Your Image Link With Https://",
+})
 end
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=861951059"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
 
 entityTable.Debug.OnEntityDespawned = function()
-    print("Entity has despawned:", entityTable)
+    -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "A-60 called a friend",
+    Desc = "._.",
+    Reason = 'Survive A-200',
+    Image = "Your Image Link With Https://",
+})
 end
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=336790778"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
 
 entityTable.Debug.OnEntityStartMoving = function()
     print("Entity has started moving:", entityTable)
@@ -2211,12 +2502,40 @@ local entityTable = Spawner.createEntity({
 
 -----[[  Debug -=- Advanced  ]]-----
 entityTable.Debug.OnEntitySpawned = function()
-    print("Entity has spawned:", entityTable)
+      -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Depth is Coming",
+    Desc = "hide quick!",
+    Reason = '',
+    Image = "Your Image Link With Https://",
+})
 end
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=861951059"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
 
 entityTable.Debug.OnEntityDespawned = function()
-    print("Entity has despawned:", entityTable)
+      -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Deepness",
+    Desc = "hmm...",
+    Reason = 'Survive Depth',
+    Image = "Your Image Link With Https://",
+})
 end
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=336790778"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
 
 entityTable.Debug.OnEntityStartMoving = function()
     print("Entity has started moving:", entityTable)
@@ -2304,12 +2623,40 @@ local entityTable = Spawner.createEntity({
 
 -----[[  Debug -=- Advanced  ]]-----
 entityTable.Debug.OnEntitySpawned = function()
-    print("Entity has spawned:", entityTable)
+     -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Silence is Coming",
+    Desc = "Shh...",
+    Reason = '',
+    Image = "Your Image Link With Https://",
+})
 end
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=861951059"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
 
 entityTable.Debug.OnEntityDespawned = function()
-    print("Entity has despawned:", entityTable)
+      -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Quietness",
+    Desc = "shh...",
+    Reason = 'Survive Silence',
+    Image = "Your Image Link With Https://",
+})
 end
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=336790778"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
 
 entityTable.Debug.OnEntityStartMoving = function()
     print("Entity has started moving:", entityTable)
@@ -2397,12 +2744,40 @@ local entityTable = Spawner.createEntity({
 
 -----[[  Debug -=- Advanced  ]]-----
 entityTable.Debug.OnEntitySpawned = function()
-    print("Entity has spawned:", entityTable)
+      -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Greed is Coming",
+    Desc = "omg",
+    Reason = '',
+    Image = "Your Image Link With Https://",
+})
 end
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=861951059"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
 
 entityTable.Debug.OnEntityDespawned = function()
-    print("Entity has despawned:", entityTable)
+       -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Greedness",
+    Desc = "oh",
+    Reason = 'Survive Greed',
+    Image = "Your Image Link With Https://",
+})
 end
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=336790778"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
 
 entityTable.Debug.OnEntityStartMoving = function()
     print("Entity has started moving:", entityTable)
@@ -2490,12 +2865,40 @@ local entityTable = Spawner.createEntity({
 
 -----[[  Debug -=- Advanced  ]]-----
 entityTable.Debug.OnEntitySpawned = function()
-    print("Entity has spawned:", entityTable)
+     -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Kawaii Ambush is Coming",
+    Desc = "Hide...",
+    Reason = '',
+    Image = "Your Image Link With Https://",
+})
 end
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=861951059"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
 
 entityTable.Debug.OnEntityDespawned = function()
-    print("Entity has despawned:", entityTable)
+      -- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Kawaii Rebound",
+    Desc = "that sounds familiar",
+    Reason = 'Survive Kawaii Ambush',
+    Image = "Your Image Link With Https://",
+})
 end
+local sound = Instance.new("Sound")
+sound.SoundId = "http://www.roblox.com/asset/?id=336790778"
+sound.Volume = 1
+sound.Parent = workspace
+sound:Play()
 
 entityTable.Debug.OnEntityStartMoving = function()
     print("Entity has started moving:", entityTable)
@@ -2632,7 +3035,6 @@ Section:NewButton("Shocker", "I got Shocked", function()
 		Shocker:Destroy()
 	end
 end)
-
 
 local Tab = Window:NewTab("Killable")
 

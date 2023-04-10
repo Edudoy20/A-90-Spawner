@@ -4,9 +4,9 @@ local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 -- Creates and displays your custom achievement
 Achievements.Get({
     Title = "EXECUTED!",
-    Desc = "Thanks for buying the OverBot Hub",
+    Desc = "Thanks for using the OverBot Hub",
     Reason = 'Execute the OverBot Hub',
-    Image = "",
+    Image = "https://static.wikia.nocookie.net/doors-game/images/3/30/BloqueadoA90.webp/revision/latest?cb=20230201135935&path-prefix=pt-br",
 })
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
